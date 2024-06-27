@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class='logo'>
+    Solar explorer
+    <span>in only CSS</span>
+  </h1>
+  <input class='planet9' id='pluto' type='radio' name='planet'>
+  <label class='menu plutão' for='plutão'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        plutão
+      </h2>
+      <h3>39.5 AU</h3>
+    </div>
+  </label>
+  <input class='planet8' id='neptune' type='radio' name='planet'>
+  <label class='menu netuno' for='netuno'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Netuno
+      </h2>
+      <h3>30.06 AU</h3>
+    </div>
+  </label>
+  <input class='planet7' id='uranus' type='radio' name='planet'>
+  <label class='menu urano' for='urano'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Urano
+      </h2>
+      <h3>19.18 AU</h3>
+    </div>
+  </label>
+  <input class='planet6' id='saturn' type='radio' name='planet'>
+  <label class='menu saturno' for='saturno'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Saturno
+      </h2>
+      <h3>9.539 AU</h3>
+    </div>
+  </label>
+  <input class='planet5' id='jupiter' type='radio' name='planet'>
+  <label class='jupiter menu' for='jupiter'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Jupiter
+      </h2>
+      <h3>5.203 AU</h3>
+    </div>
+  </label>
+  <input class='planet4' id='mars' type='radio' name='planet' checked='checked'>
+  <label class='mars menu' for='mars'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Marte
+      </h2>
+      <h3>1.524 AU</h3>
+    </div>
+  </label>
+  <input class='planet3' id='earth' type='radio' name='planet' checked='checked'>
+  <label class='earth menu' for='earth'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Terra
+      </h2>
+      <h3>1 AU</h3>
+    </div>
+  </label>
+  <input class='planet2' id='venus' type='radio' name='planet' checked='checked'>
+  <label class='menu venus' for='venus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Venus
+      </h2>
+      <h3>0.723 AU</h3>
+    </div>
+  </label>
+  <input class='planet1' id='mercury' type='radio' name='planet' checked='checked'>
+  <label class='menu mercury' for='mercury'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mercurio
+      </h2>
+      <h3>0.39 AU</h3>
+    </div>
+  </label>
+  <div class='solar'>
+    <div class='solar_systm'>
+      <div class='mercury planet'>
+        <div class='mercury planet_description'>
+          <h2>Planet</h2>
+          <h1>Mercurio</h1>
+          <p>O planeta mais próximo do sol. Ele gira em torno do Sol mais rápido do que todos os outros planetas, e é por isso que os romanos o batizaram em homenagem ao seu deus mensageiro de pés rápidos.</p>
+          <label for='readMercury'>
+            <a>
+              Leia Mais
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet venus'>
+        <div class='planet_description venus'>
+          <h2>Planet</h2>
+          <h1>Venus</h1>
+          <p>Nomeado em homenagem à deusa romana do amor e da beleza. Nos tempos antigos, pensava-se que Vênus era duas estrelas diferentes, a estrela da tarde e a estrela da manhã.</p>
+          <label for='readVenus'>
+            <a>
+              Leia Mais
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='earth planet'>
+        <div class='moon moon'>
+          <h3>Lua</h3>
+          <h2>Lua</h2>
+        </div>
+        <div class='m trajectory'></div>
+        <div class='earth planet_description'>
+          <h2>Planet</h2>
+          <h1>Terra</h1>
+          <p>Terra, nossa casa. É o único planeta conhecido por ter uma atmosfera contendo oxigênio livre, oceanos de água líquida em sua superfície e, claro, vida.</p>
+          <label for='readEarth'>
+            <a>
+              Leia mais 
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='mars planet'>
+        <div class='deimos moon'>
+          <h3>Lua</h3>
+          <h2>Deimos</h2>
+        </div>
+        <div class='d trajectory'></div>
+        <div class='moon phoebos'>
+          <h3>Lua</h3>
+          <h2>Phoebos</h2>
+        </div>
+        <div class='p trajectory'></div>
+        <div class='mars planet_description'>
+          <h2>Planeta</h2>
+          <h1>Marte</h1>
+          <p>Quarto planeta a partir do Sol e o segundo menor planeta do sistema solar. Nomeado em homenagem ao deus romano da guerra, frequentemente descrito como o “Planeta Vermelho”.</p>
+          <label for='readMars'>
+            <a>
+              Leia Mais
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='jupiter planet'>
+        <div class='lo moon'>
+          <h3>Lua</h3>
+          <h2>Io</h2>
+        </div>
+        <div class='europa moon'>
+          <h3>Lua</h3>
+          <h2>Europa</h2>
+        </div>
+        <div class='ganymede moon'>
+          <h3>Lua</h3>
+          <h2>Ganymede</h2>
+        </div>
+        <div class='lop trajectory'></div>
+        <div class='eu trajectory'></div>
+        <div class='ga trajectory'></div>
+        <div class='jupiter planet_description'>
+          <h2>Planeta</h2>
+          <h1>Jupiter</h1>
+          <p>Júpiter é o maior planeta do sistema solar. Apropriadamente, recebeu o nome do rei dos deuses da mitologia romana. </p>
+          <label for='readJupiter'>
+            <a>
+             Leia Mais
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet saturn'>
+        <div class='moon titan'>
+          <h3>Lua</h3>
+          <h2>Titan</h2>
+        </div>
+        <div class='dione Lua'>
+          <h3>Lua</h3>
+          <h2>Dione</h2>
+        </div>
+        <div class='enceladus Lua'>
+          <h3>Lua</h3>
+          <h2>Enceladus</h2>
+        </div>
+        <div class='ti trajectory'></div>
+        <div class='di trajectory'></div>
+        <div class='enc trajectory'></div>
+        <div class='planet_description saturn'>
+          <h2>Planet</h2>
+          <h1>Saturno</h1>
+          <p>Saturno é o sexto planeta a partir do Sol e o segundo maior planeta do sistema solar. Saturno era o nome romano de Cronos, o senhor dos Titãs.</p>
+          <label for='readSaturn'>
+            <a>
+              Leia Mais
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet uranus'>
+        <div class='miranda moon'>
+          <h3>Lua</h3>
+          <h2>Miranda</h2>
+        </div>
+        <div class='ariel moon'>
+          <h3>Lua</h3>
+          <h2>Ariel</h2>
+        </div>
+        <div class='moon umbriel'>
+          <h3>Lua</h3>
+          <h2>Umbriel</h2>
+        </div>
+        <div class='mir trajectory'></div>
+        <div class='ari trajectory'></div>
+        <div class='trajectory umb'></div>
+        <div class='planet_description uranus'>
+          <h2>Planeta</h2>
+          <h1>Urano</h1>
+          <p>O primeiro planeta a ser descoberto pelos cientistas. O planeta é notável pela sua inclinação dramática, que faz com que o seu eixo aponte quase diretamente para o sol.</p>
+          <label for='readUranus'>
+            <a>
+              Leia Mais
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='neptune planet'>
+        <div class='moon triton'>
+          <h3>Lua</h3>
+          <h2>Triton</h2>
+        </div>
+        <div class='moon proteus'>
+          <h3>Lua</h3>
+          <h2>Proteus</h2>
+        </div>
+        <div class='moon nereid'>
+          <h3>Lua</h3>
+          <h2>Nereid</h2>
+        </div>
+        <div class='trajectory tri'></div>
+        <div class='pro trajectory'></div>
+        <div class='ner trajectory'></div>
+        <div class='neptune planet_description'>
+          <h2>Planeta</h2>
+          <h1>Neptuno</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          <label for='readNeptune'>
+            <a>
+              Leia Mais
+              <span>e     </span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet pluto'>
+        <div class='planet_description pluto'>
+          <h2>Dwarf planet</h2>
+          <h1>Plutão</h1>
+          <p>Plutão, outrora considerado o nono e mais distante planeta do Sol, é agora o maior planeta anão conhecido no sistema solar.</p>
+          <label for='readPluto'>
+            <a>
+              Leia Mais
+              <span>e     </span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'>               </div>
+      </div>
+    </div>
+  </div>
+  <input class='read' id='readMercury' type='radio' name='mercuryRead'>
+  <label class='closeBig' for='closeMercury'></label>
+  <input class='read' id='closeMercury' type='radio' name='mercuryRead'>
+  <div class='panel'>
+    <h1>Mercurio</h1>
+    <p>Mercúrio é o planeta mais próximo do sol. Como tal, ele gira em torno do Sol mais rápido do que todos os outros planetas, razão pela qual os romanos o batizaram em homenagem ao seu deus mensageiro de pés velozes.</p>
+    <p>Os sumérios também conheciam Mercúrio há pelo menos 5.000 anos. Foi frequentemente associado a Nabu, o deus da escrita. Mercúrio também recebeu nomes separados por sua aparência tanto como estrela da manhã quanto como estrela da tarde. Os astrónomos gregos sabiam, no entanto, que os dois nomes se referiam ao mesmo corpo, e Heráclito, por volta de 500 a.C., pensou corretamente que tanto Mercúrio como Vénus orbitavam o Sol, e não a Terra.</p>
+    <img src='https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&ssl=1'>
+    <h2>Um ano em Mercúrio dura apenas 88 dias.</h2>
+    <p>Um dia solar (o tempo de meio-dia ao meio-dia na superfície do planeta) em Mercúrio dura o equivalente a 176 dias terrestres enquanto o dia sideral (o tempo de 1 rotação em relação a um ponto fixo) dura 59 dias terrestres. Mercúrio está quase travado em relação ao Sol e, com o tempo, isso desacelerou a rotação do planeta para quase coincidir com sua órbita ao redor do Sol. Mercúrio também tem a maior excentricidade orbital de todos os planetas, com sua distância do Sol variando de 46 a 70 milhões de km.</p>
+    <h2>Mercúrio é o menor planeta do Sistema Solar.</h2>
+    <p>Um dos cinco planetas visíveis a olho nu, Mercúrio tem apenas 4.879 quilômetros de diâmetro em seu equador, em comparação com 12.742 quilômetros da Terra.</p>
+    <h2>Mercúrio é o segundo planeta mais denso. </h2>
+    <p>Embora o planeta seja pequeno, Mercúrio é muito denso. Cada centímetro cúbico tem densidade de 5,4 gramas, sendo que apenas a Terra tem densidade maior. Isto se deve em grande parte ao fato de Mercúrio ser composto principalmente de metais pesados ​​e rocha.</p>
+    <h2>Mercúrio tem rugas.</h2>
+    <p>À medida que o núcleo de ferro do planeta esfriou e se contraiu, a superfície do planeta ficou enrugada. Os cientistas chamaram essas rugas de Lobate Scarps. Essas escarpas podem ter até um quilômetro de altura e centenas de quilômetros de comprimento.</p>
+    <br>
+  </div>
+  <input class='read' id='readVenus' type='radio' name='venusRead'>
+  <label class='closeBig' for='closeVenus'></label>
+  <input class='read' id='closeVenus' type='radio' name='venusRead'>
+  <div class='panel'>
+    <h1>Venus</h1>
+    <p>Vênus, o segundo planeta a partir do Sol, recebeu o nome da deusa romana do amor e da beleza. O planeta – o único planeta com o nome de uma mulher – pode ter sido nomeado em homenagem à mais bela divindade do seu panteão porque brilhava como o mais brilhante dos cinco planetas conhecidos pelos antigos astrónomos.</p>
+    <p>Nos tempos antigos, pensava-se que Vênus era duas estrelas diferentes, a estrela da tarde e a estrela da manhã – isto é, aquelas que apareciam pela primeira vez ao pôr do sol e ao nascer do sol. Em latim, eles eram conhecidos respectivamente como Vésper e Lúcifer. Nos tempos cristãos, Lúcifer, ou “portador da luz”, tornou-se conhecido como o nome de Satanás antes de sua queda. No entanto, novas observações de Vênus na era espacial mostram um ambiente muito infernal. Isto torna Vénus um planeta muito difícil de observar de perto, porque as naves espaciais não sobrevivem muito tempo na sua superfície.</p>
+    <img src='https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg'>
+    <h2>Um dia em Vênus dura mais de um ano. </h2>
+    <p>São necessários 243 dias terrestres para girar uma vez em seu eixo (dia sideral). A órbita do planeta ao redor do Sol leva 225 dias terrestres, em comparação com os 365 da Terra. Um dia na superfície de Vênus (dia solar) leva 117 dias terrestres.</p>
+    <h2>Vênus gira na direção oposta à maioria dos outros planetas. </h2>
+    <p>Isso significa que Vênus está girando na direção oposta ao Sol, isso também é conhecido como rotação retrógrada. Uma possível razão pode ser uma colisão no passado com um asteróide ou outro objeto que fez com que o planeta alterasse a sua trajetória rotacional. Também difere da maioria dos outros planetas do nosso sistema solar por não ter satélites naturais.</p>
+    <h2>Vênus é o segundo objeto mais brilhante no céu noturno. </h2>
+    <p>Apenas a Lua é mais brilhante. Com uma magnitude entre -3,8 e -4,6, Vênus é tão brilhante que pode ser visto durante o dia em um dia claro.</p>
+    <h2>A pressão atmosférica em Vênus é 92 vezes maior que a da Terra. </h2>
+    <p>Embora o seu tamanho e massa sejam semelhantes aos da Terra, os pequenos asteróides são esmagados quando entram na sua atmosfera, o que significa que não existem pequenas crateras na superfície do planeta. A pressão sentida por um ser humano na superfície seria equivalente àquela experimentada nas profundezas do mar na Terra.</p>
+    <br>
+  </div>
+  <input class='read' id='readEarth' type='radio' name='earthRead'>
+  <label class='closeBig' for='closeEarth'></label>
+  <input class='read' id='closeEarth' type='radio' name='earthRead'>
+  <div class='panel'>
+    <h1>Earth</h1>
+    <p>A Terra, nossa casa, é o terceiro planeta a partir do sol. É o único planeta conhecido por ter uma atmosfera contendo oxigênio livre, oceanos de água líquida em sua superfície e, claro, vida.</p>
+    <p>A Terra é o quinto maior dos planetas do sistema solar - menor que os quatro gigantes gasosos, Júpiter, Saturno, Urano e Netuno, mas maior que os outros três planetas rochosos,</p>
+    <img src='https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350'>
+    <h2>A rotação da Terra está a abrandar gradualmente.</h2>
+    <p>Esta desaceleração está a acontecer de forma quase imperceptível, a aproximadamente 17 milissegundos por cem anos, embora a taxa a que ocorre não seja perfeitamente uniforme. Isto tem o efeito de prolongar os nossos dias, mas acontece tão lentamente que poderá demorar até 140 milhões de anos antes que a duração de um dia aumente para 25 horas.</p>
+    <h2>A Terra já foi considerada o centro do universo.</h2>
+    <p>Devido aos movimentos aparentes do Sol e dos planetas em relação ao seu ponto de vista, os cientistas antigos insistiam que a Terra permanecia estática, enquanto outros corpos celestes viajavam em órbitas circulares à sua volta. Eventualmente, a visão de que o Sol estava no centro do universo foi postulada por Copérnico, embora este também não seja o caso.</p>
+    <h2>A Terra tem um poderoso campo magnético.</h2>
+    <p>TEste fenômeno é causado pelo núcleo de níquel-ferro do planeta, juntamente com sua rápida rotação. Este campo protege a Terra dos efeitos do vento solar.</p>
+    <h2>Existe apenas um satélite natural do planeta Terra.</h2>
+    <p>Como percentagem do tamanho do corpo que orbita, a Lua é o maior satélite de qualquer planeta do nosso sistema solar. Em termos reais, porém, é apenas o quinto maior satélite natural.</p>
+    <br>
+  </div>
+  <input class='read' id='readMars' type='radio' name='marsRead'>
+  <label class='closeBig' for='closeMars'></label>
+  <input class='read' id='closeMars' type='radio' name='marsRead'>
+  <div class='panel'>
+    <h1>Marte</h1>
+    <p>Marte é o quarto planeta a partir do sol. Condizente com a cor sangrenta do planeta vermelho, os romanos deram-lhe o nome do seu deus da guerra. Os romanos copiaram os antigos gregos, que também deram ao planeta o nome de seu deus da guerra, Ares. Outras civilizações também deram nomes aos planetas com base em sua cor - por exemplo, os egípcios o chamaram de "Her Desher", que significa "o vermelho", enquanto os antigos astrônomos chineses o apelidaram de "estrela de fogo".</p>
+    <img src='https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg'>
+    <h2>Marte e a Terra têm aproximadamente a mesma massa terrestre.</h2>
+    <p>Embora Marte tenha apenas 15% do volume da Terra e pouco mais de 10% da massa da Terra, cerca de dois terços da superfície da Terra são cobertos por água. A gravidade da superfície marciana é de apenas 37% da da Terra (o que significa que você poderia saltar quase três vezes mais alto em Marte).</p>
+    <h2>Marte é o lar da montanha mais alta do sistema solar.</h2>
+    <p>Olympus Mons, um vulcão em escudo, tem 21 km de altura e 600 km de diâmetro. Apesar de ter se formado ao longo de bilhões de anos, as evidências de fluxos de lava vulcânica são tão recentes que muitos cientistas acreditam que ainda pode estar ativo.</p>
+    <h2>Apenas 18 missões a Marte foram bem-sucedidas.</h2>
+    <p>Em setembro de 2014, ocorreram 40 missões a Marte, incluindo orbitadores, pousadores e rovers, mas sem contar os sobrevoos. As chegadas mais recentes incluem a missão Mars Curiosity em 2012, a missão MAVEN, que chegou em 22 de setembro de 2014, seguida pelo orbitador MOM Mangalyaan da Organização de Pesquisa Espacial Indiana, que chegou em 24 de setembro de 2014. As próximas missões a chegar serão a missão ExoMars da Agência Espacial Europeia, composta por um orbitador, um módulo de pouso e um rover, seguida pela missão de pouso robótico InSight da NASA, com lançamento previsto para março de 2016 e chegada planejada em setembro de 2016.</p>
+    <h2>Marte tem as maiores tempestades de poeira do sistema solar.</h2>
+    <p>Eles podem durar meses e cobrir todo o planeta. As estações são extremas porque seu caminho orbital elíptico (de formato oval) ao redor do Sol é mais alongado do que a maioria dos outros planetas do sistema solar.</p>
+    <br>
+  </div>
+  <input class='read' id='readJupiter' type='radio' name='jupiterRead'>
+  <label class='closeBig' for='closeJupiter'></label>
+  <input class='read' id='closeJupiter' type='radio' name='jupiterRead'>
+  <div class='panel'>
+    <h1>Jupiter</h1>
+    <p>Júpiter é o maior planeta do sistema solar. Apropriadamente, recebeu o nome do rei dos deuses da mitologia romana. De maneira semelhante, os antigos gregos nomearam o planeta em homenagem a Zeus, o rei do panteão grego.</p>
+    <p>Júpiter ajudou a revolucionar a forma como víamos o universo e a nós mesmos em 1610, quando Galileu descobriu as quatro grandes luas de Júpiter – Io, Europa, Ganimedes e Calisto, agora conhecidas como luas galileanas. Esta foi a primeira vez que corpos celestes foram vistos orbitando um objeto diferente da Terra, um importante apoio à visão copernicana de que a Terra não era o centro do universo.</p>
+    <img src='http://hanaleikauaivacation.com/wp-content/uploads/parser/jupiter-landscape-1.jpg'>
+    <h2>Júpiter é o quarto objeto mais brilhante do sistema solar.</h2>
+    <p>Apenas o Sol, a Lua e Vênus são mais brilhantes. É um dos cinco planetas visíveis a olho nu da Terra.</p>
+    <h2>Os antigos babilônios foram os primeiros a registrar os avistamentos de Júpiter.</h2>
+    <p>Isso foi por volta do século 7 ou 8 aC. Júpiter tem o nome do rei dos deuses romanos. Para os gregos representava Zeus, o deus do trovão. Os mesopotâmicos viam Júpiter como o deus Marduk e patrono da cidade da Babilônia. As tribos germânicas viam este planeta como Donar, ou Thor.</p>
+    <h2>Júpiter tem o dia mais curto de todos os planetas.</h2>
+    <p>Ele gira em torno de seu eixo uma vez a cada 9 horas e 55 minutos. A rotação rápida achata ligeiramente o planeta, dando-lhe uma forma achatada.</p>
+    <h2>Júpiter orbita o Sol uma vez a cada 11,8 anos terrestres.</h2>
+    <p>Do nosso ponto de vista na Terra, parece mover-se lentamente no céu, demorando meses a passar de uma constelação para outra.</p>
+    <br>
+  </div>
+  <input class='read' id='readSaturn' type='radio' name='saturnRead'>
+  <label class='closeBig' for='closeSaturn'></label>
+  <input class='read' id='closeSaturn' type='radio' name='saturnRead'>
+  <div class='panel'>
+    <h1>Saturno</h1>
+    <p>Saturno é o sexto planeta a partir do Sol e o segundo maior planeta do sistema solar. Saturno era o nome romano de Cronos, o senhor dos Titãs na mitologia grega. Saturno é a raiz da palavra inglesa "sábado".</p>
+    <p>Saturno é o planeta mais distante da Terra visível a olho nu, mas é através de um telescópio que as características mais marcantes do planeta podem ser vistas: os anéis de Saturno. Embora os outros gigantes gasosos do sistema solar – Júpiter, Urano e Netuno – também tenham anéis, os de Saturno são sem dúvida os mais extraordinários.</p>
+    <img src='http://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg'>
+    <h2>Saturno pode ser visto a olho nu.</h2>
+    <p>É o quinto objeto mais brilhante do sistema solar e também é facilmente estudado através de binóculos ou de um pequeno telescópio.</p>
+    <h2>Saturno era conhecido pelos antigos, incluindo os babilônios e os observadores do Extremo Oriente.</h2>
+    <p>É nomeado em homenagem ao deus romano Saturno e era conhecido pelos gregos como Cronos.</p>
+    <h2>Saturno é o planeta mais plano.</h2>
+    <p>Seu diâmetro polar é 90% do diâmetro equatorial, isso se deve à sua baixa densidade e rápida rotação. Saturno gira em torno de seu eixo uma vez a cada 10 horas e 34 minutos, dando-lhe o segundo dia mais curto de qualquer planeta do sistema solar.</p>
+    <h2>Saturno orbita o Sol uma vez a cada 29,4 anos terrestres.</h2>
+    <p>Seu movimento lento contra o pano de fundo das estrelas rendeu-lhe o apelido de “Lubadsagush” dos antigos assírios. O nome significa “o mais velho dos velhos”.</p>
+    <br>
+  </div>
+  <input class='read' id='readUranus' type='radio' name='uranusRead'>
+  <label class='closeBig' for='closeUranus'></label>
+  <input class='read' id='closeUranus' type='radio' name='uranusRead'>
+  <div class='panel'>
+    <h1>Urano</h1>
+    <p>Urano é o sétimo planeta a partir do Sol e o primeiro a ser descoberto pelos cientistas. Embora Urano seja visível a olho nu, durante muito tempo foi confundido com uma estrela devido à obscuridade e à órbita lenta do planeta. O planeta também é notável pela sua inclinação dramática, que faz com que o seu eixo aponte quase diretamente para o sol.</p>
+    <p>O astrônomo britânico William Herschel descobriu Urano acidentalmente em 13 de março de 1781, com seu telescópio enquanto examinava todas as estrelas até aquelas cerca de 10 vezes mais fracas do que as que podem ser vistas a olho nu. Uma "estrela" parecia diferente e, dentro de um ano, Urano seguiu uma órbita planetária.</p>
+    <img src='http://www.cosmosup.com/wp-content/uploads/2016/02/Uranus-Facts-About-the-Planet-Uranus-700x325.jpg'>
+    <h2>Urano foi oficialmente descoberto por Sir William Herschel em 1781.</h2>
+    <p>Está muito escuro para ter sido visto pelos antigos. A princípio, Herschel pensou que fosse um cometa, mas vários anos depois foi confirmado como um planeta. Herscal tentou que sua descoberta fosse chamada de “Georgian Sidus” em homenagem ao rei George III. O nome Urano foi sugerido pelo astrônomo Johann Bode. O nome vem da antiga divindade grega Uranos.</p>
+    <h2>Urano gira em torno de seu eixo uma vez a cada 17 horas e 14 minutos.</h2>
+    <p>O planeta gira em direção retrógrada, oposta à maneira como a Terra e a maioria dos outros planetas giram.</p>
+    <h2>Urano faz uma viagem ao redor do Sol a cada 84 anos terrestres.</h2>
+    <p>Durante algumas partes de sua órbita, um ou outro de seus pólos apontam diretamente para o Sol e recebem cerca de 42 anos de luz solar direta. O resto do tempo eles ficam na escuridão.</p>
+    <h2>Urano é frequentemente referido como um planeta “gigante de gelo”.</h2>
+    <p>Como os outros gigantes gasosos, ele tem uma camada superior de hidrogênio, que contém hélio misturado. Abaixo dela está um “manto” gelado, que envolve um núcleo de rocha e gelo. A atmosfera superior é composta de água, amônia e cristais de gelo de metano que dão ao planeta sua cor azul pálida.</p>
+    <br>
+  </div>
+  <input class='read' id='readNeptune' type='radio' name='neptuneRead'>
+  <label class='closeBig' for='closeNeptune'></label>
+  <input class='read' id='closeNeptune' type='radio' name='neptuneRead'>
+  <div class='panel'>
+    <h1>Netuno</h1>
+    <p>Netuno é o oitavo planeta a partir do sol. Foi o primeiro planeta a ter sua existência prevista por cálculos matemáticos antes de ser realmente visto através de um telescópio em 23 de setembro de 1846. Irregularidades na órbita de Urano levaram o astrônomo francês Alexis Bouvard a sugerir que a atração gravitacional de outro corpo celeste poderia Seja responsável. O astrônomo alemão Johann Galle confiou então em cálculos subsequentes para ajudar a localizar Netuno através do telescópio. Anteriormente, o astrônomo Galileu Galilei esboçou o planeta, mas o confundiu com uma estrela devido ao seu movimento lento. De acordo com todos os outros planetas vistos no céu, este novo mundo recebeu um nome da mitologia grega e romana – Netuno, o deus romano do mar.</p>
+    <p>Apenas uma missão passou por Neptuno – a Voyager 2 em 1989 – o que significa que os astrónomos realizaram a maioria dos estudos utilizando telescópios terrestres. Hoje, ainda existem muitos mistérios sobre o planeta frio e azul, como por que os seus ventos são tão rápidos e por que o seu campo magnético está desequilibrado.</p>
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8Dd14tbXAzh1iz-EJl9tulRwH7Bb-SxX6sXpKFDbqb-NKwpE'>
+    <h2>Netuno não era conhecido pelos antigos.</h2>
+    <p>Não é visível a olho nu e foi observado pela primeira vez em 1846. Sua posição foi determinada por meio de previsões matemáticas. Foi nomeado em homenagem ao deus romano do mar.</p>
+    <h2>Netuno gira em torno de seu eixo muito rapidamente.</h2>
+    <p>Suas nuvens equatoriais levam 18 horas para fazer uma rotação. Isso ocorre porque Netuno não é um corpo sólido.</p>
+    <h2>Netuno é o menor dos gigantes gelados.</h2>
+    <p>Dapesar de ser menor que Urano, Netuno tem uma massa maior. Abaixo de sua atmosfera pesada, Urano é feito de camadas de gases hidrogênio, hélio e metano. Eles envolvem uma camada de água, amônia e gelo de metano. O núcleo interno do planeta é feito de rocha.</p>
+    <h2>A atmosfera de Netuno é feita de hidrogênio e hélio, com algum metano.</h2>
+    <p>O metano absorve a luz vermelha, o que faz com que o planeta pareça um lindo azul. Nuvens altas e finas flutuam na alta atmosfera.</p>
+  </div>
+  <input class='read' id='readPluto' type='radio' name='plutoRead'>
+  <label class='closeBig' for='closePluto'></label>
+  <input class='read' id='closePluto' type='radio' name='plutoRead'>
+  <div class='panel'>
+    <h1>Plutão</h1>
+    <p>Plutão, outrora considerado o nono e mais distante planeta do Sol, é agora o maior planeta anão conhecido no sistema solar. É também um dos maiores membros conhecidos do Cinturão de Kuiper, uma zona sombria além da órbita de Netuno que se acredita ser povoada por centenas de milhares de corpos rochosos e gelados, cada um com mais de 100 quilômetros de diâmetro, junto com 1 trilhão de corpos. ou mais cometas. </p>
+    <p>Em 2006, Plutão foi reclassificado como planeta anão, uma mudança amplamente considerada um rebaixamento. A questão do estatuto de planeta de Plutão tem atraído controvérsia e suscitado debate na comunidade científica, e entre o público em geral, desde então. Em 2017, um grupo científico (incluindo membros da missão New Horizon) propôs uma nova definição de planetidade baseada em "objetos redondos no espaço menores que estrelas", o que faria com que o número de planetas em nosso sistema solar se expandisse de 8 para cerca de 100. .</p>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/asd.jpeg'>
+    <h2>Plutão tem o nome do deus grego do submundo.</h2>
+    <p>Este é um nome posterior para o mais conhecido Hades e foi proposto por Venetia Burney, uma estudante de onze anos de Oxford, Inglaterra.</p>
+    <h2>Plutão foi reclassificado de planeta para planeta anão em 2006.</h2>
+    <p>Foi quando a IAU formalizou a definição de planeta como “Um planeta é um corpo celeste que (a) está em órbita ao redor do Sol, (b) tem massa suficiente para que sua autogravidade supere as forças do corpo rígido de modo que assuma uma forma de equilíbrio hidrostático (quase redonda) e (c) limpou a vizinhança em torno de sua órbita.”</p>
+    <h2>Plutão foi descoberto em 18 de fevereiro de 1930 pelo Observatório Lowell.</h2>
+    <p>Durante os 76 anos entre a descoberta de Plutão e o momento em que foi reclassificado como planeta anão, ele completou menos de um terço de sua órbita ao redor do Sol.</p>
+    <h2>Plutão tem cinco luas conhecidas.</h2>
+    <p>As luas são Caronte (descoberta em 1978), Hidra e Nix (ambas descobertas em 2005), Kerberos originalmente P4 (descoberta em 2011) e Styx originalmente P5 (descoberta em 2012) designações oficiais S/2011 (134340) 1 e S/2012 ( 134340) 1.</p>
+  </div>
+</body>
+</html>
+
+
